@@ -1,0 +1,10 @@
+package com.java8;
+
+public class Address {
+
+	private String address;
+    private String suburb;
+    private String state;
+    
+    
+}

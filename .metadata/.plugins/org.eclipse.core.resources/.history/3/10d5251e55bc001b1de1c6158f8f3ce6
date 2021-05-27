@@ -1,0 +1,27 @@
+package com.java8;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+public class OptionalDemo {
+
+	public static void main(String[] args) {
+		
+
+	}
+	
+	
+	private Optional<List<User>> getUserList() {
+		List<User> userList = new ArrayList<User>();
+		
+		for(int i =0; i<10; i++) {
+			Address add = new Address("xxx"+i, "yyy"+i, "zzz"+i);
+			User user = new User("NNN"+i, "MMM"+i, add);	
+			userList.add(user);
+		}
+			
+		return Optional.ofNullable(userList);
+	}
+
+}
